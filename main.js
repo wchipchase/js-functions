@@ -16,3 +16,20 @@ const namePrinter = (firstName, lastName) => {
 
 namePrinter('Zoe', 'Ames');
 namePrinter('John', 'Doe');
+
+
+const nuggetizer = (animal) => {
+    return `processed ${animal};`
+};
+
+console.log(nuggetizer('chicken'));
+console.log(nuggetizer('pig'));
+console.log(nuggetizer('cow'));
+console.log(nuggetizer('fish'));
+console.log(nuggetizer('student'));
+
+const dogBreed = (dog) => {
+    return `My favorite dogbreed is ${dog}`;
+};
+
+console.log(dogBreed('Catahoula Leopard Hound'));
