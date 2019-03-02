@@ -45,6 +45,16 @@ const printToDom = (divId, textToPrint) => {
     selectedDiv.innerHTML += textToPrint;
 };
 
-printToDom('dog-breed', dogBreed('lab') );
+// printToDom('dog-breed', dogBreed('lab') );
 
-printToDom('nuggetizer', 'mmmmmmm');
+// printToDom('nuggetizer', 'mmmmmmm');
+
+let bandNumber = 1
+const addBand = (band) => {
+
+    printToDom('band-list', `${bandNumber}. ${band} `);
+    bandNumber += 1;
+};
+
+addBand('Metallica');
+addBand('Slayer');
