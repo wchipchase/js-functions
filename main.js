@@ -33,3 +33,28 @@ const dogBreed = (dog) => {
 };
 
 console.log(dogBreed('Catahoula Leopard Hound'));
+const dogBreedDiv = document.getElementById('dog-breeds');
+console.log('dogBreedDiv', dogBreedDiv);
+dogBreedDiv.innerHTML = dogBreed('Lab');
+const nuggetizerDiv = document.getElementById('nuggetizer');
+nuggetizerDiv.innerHTML = nuggetizer('pig');
+nuggetizerDiv.innerHTML += nuggetizer('cat');
+
+const printToDom = (divId, textToPrint) => {
+    const selectedDiv = document.getElementById(divId);
+    selectedDiv.innerHTML += textToPrint;
+};
+
+// printToDom('dog-breed', dogBreed('lab') );
+
+// printToDom('nuggetizer', 'mmmmmmm');
+
+let bandNumber = 1
+const addBand = (band) => {
+
+    printToDom('band-list', `${bandNumber}. ${band} `);
+    bandNumber += 1;
+};
+
+addBand('Metallica');
+addBand('Slayer');
