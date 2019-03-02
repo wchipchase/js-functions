@@ -27,3 +27,9 @@ console.log(nuggetizer('pig'));
 console.log(nuggetizer('cow'));
 console.log(nuggetizer('fish'));
 console.log(nuggetizer('student'));
+
+const dogBreed = (dog) => {
+    return `My favorite dogbreed is ${dog}`;
+};
+
+console.log(dogBreed('Catahoula Leopard Hound'));
